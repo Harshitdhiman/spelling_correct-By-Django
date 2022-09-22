@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Template is Working</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <form action='/removepunc' method='post'>{% csrf_token %}
+            <textarea name="text" id="" cols="30" rows="10" style="width: 70%; margin: 5% 12%; font-size: 25px; border: 5px solid rgb(231, 163, 163); border-radius: 4px;",></textarea>
+
+            <input type="checkbox" name="rempuc" style="margin-left: 100px;"> Remove punctuations <br><br>
+            <input type="checkbox" name="caps" style="margin-left: 100px;"> capitalized Text <br><br>
+            <input type="checkbox" name="newlinerem" style="margin-left: 100px;"> Remove New Line <br><br>
+            <input type="checkbox" name="extraspace" style="margin-left: 100px;"> Remove Extra Space <br><br>
+
+            <button type="submit" class="btn btn-secondary" style="margin: 0px 110px;">Analyse Text</button>
+            <br><br><br><br>
+
+        </form>
+        
+
+        <script src="" async defer></script>
+    </body>
+</html>
